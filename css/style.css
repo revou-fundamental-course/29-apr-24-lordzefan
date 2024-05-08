@@ -1,0 +1,8 @@
+.navigation{
+    display: flex;
+    justify-content: space-around;
+}
+
+.content > header{
+    text-align: center;
+}
