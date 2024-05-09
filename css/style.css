@@ -3,6 +3,30 @@
     justify-content: space-between;
     margin-right: 32px;
 }
+.nav-links {
+  display: flex;
+}
+
+@media only screen and (max-width:600px){
+  .navigation{
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo{
+    margin: inherit;
+  }
+  .nav-links{
+    width: 100%;
+    flex-direction: column;
+  }
+  .core-content{
+    flex-direction: column;
+  }
+  #daftar{
+    margin-top: 5px;
+  }
+  
+}
 .logo{
     margin-left: 32px;
     background-image: url(../img/download.jpeg);
@@ -42,13 +66,48 @@
 .content > header{
     text-align: center;
 }
-.form{
-    display: flex;
-    justify-content: space-around;
+.core-content {
+  display: flex;
+  justify-content: space-around 
 }
 
-.daftar{
-    border: solid black 1px;
-    height: 400px;
-    width: 500px;
+.daftar {
+  
+  border: 2px solid black; 
+  height: 400px;
+  width: 500px;
+  margin-right: 1em; 
+}
+#daftar { 
+  background-color: #f9d93b;
+}
+
+.list-image{
+  flex: auto;
+  border: 2px solid black;
+  height: 400px;
+  width: 500px;
+  background-size: cover;
+  margin-right: 1em;
+}
+
+.contact-form{
+  display: flex;
+  flex-direction: column;
+}
+
+#nama{
+  margin : 5px;
+}
+#email{
+  margin: 5px;
+}
+#pertanyaan{
+  margin: 5 px;
+}
+
+.kirim{
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
 }

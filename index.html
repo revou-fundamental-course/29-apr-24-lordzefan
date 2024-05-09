@@ -7,7 +7,7 @@
 <body>
     <header class="navigation">
         <div class="logo"></div>
-        <nav>
+        <nav class="nav-links">
         <button class="button button1" >Home</button>
         <button class="button button1" >Galery</button>
         <button class="button button1" >Contact</button>
@@ -20,10 +20,35 @@
             <h1>My website</h1>
         </div>
     </header>
-    <section class="form">
-    <div class="daftar"></div>
-    <div class="daftar"></div>
+    <section class="core-content">
+        <div class="list-image" style="background-image: url(img/1.jpeg) ;background-size: cover;"></div>
+        <div class="list-image" style="background-image: url(img/2.jpeg) ;background-size: cover;"></div>
+        <div class="list-image" style="background-image: url(img/3.jpeg) ;background-size: cover;"></div>
+        <div class="list-image" style="background-image: url(img/4.jpeg) ;background-size: cover;"></div>
+        <div class="list-image" style="background-image: url(img/5.jpeg) ;background-size: cover;"></div>
+        <div class="list-image" style="background-image: url(img/6.jpeg) ;background-size: cover;"></div>
+        <div class="daftar" id="daftar">
+            <header>
+                <div style="text-align: center;">
+                    <h2>Contact us</h2>
+                </div>
+            </header>
+            <form class="contact-form">
+                <label style="margin: 5px;" for="nama">Name:</label>
+                <input type="text" id="nama" name="nama" required>
+
+                <label style="margin: 5px;" for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label style="margin: 5px;" for="pertanyaan">Message:</label>
+                <textarea style="margin: 5px;" id="pertanyaan" name="pertanyaan" required></textarea>
+
+                <button class="kirim" type="submit">Send</button>
+            </form>
+        </div>
     </section>
     </article>
+    
+    <script src="js/scripts.js"></script>
 </body>
 </html>
