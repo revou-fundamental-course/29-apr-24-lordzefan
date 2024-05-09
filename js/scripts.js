@@ -25,3 +25,29 @@ function showSlide(index){
 
 // Panggil setInterval di luar fungsi showSlide
 setInterval(() => nextSlide(1), 2000);
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Mendapatkan tombol-tombol navigasi
+    var btnHome = document.getElementById("btnHome");
+    var btnGallery = document.getElementById("btnService");
+    var btnContact = document.getElementById("btnContact");
+
+    // Menangani peristiwa klik pada tombol-tombol navigasi
+    btnHome.addEventListener("click", function() {
+        // Navigasikan pengguna ke bagian Home
+        var homeSection = document.getElementById("home");
+        homeSection.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    btnService.addEventListener("click", function() {
+        // Navigasikan pengguna ke bagian Gallery
+        var gallerySection = document.getElementById("service");
+        gallerySection.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    btnContact.addEventListener("click", function() {
+        // Navigasikan pengguna ke bagian Contact
+        var contactSection = document.getElementById("contact");
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+    });
+});

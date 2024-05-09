@@ -7,6 +7,10 @@
   display: flex;
 }
 
+section{
+  margin: 50px;
+}
+
 @media only screen and (max-width:600px){
   .navigation{
     flex-direction: column;
@@ -110,4 +114,55 @@
   margin-top: 20px;
   margin-left: 5px;
   margin-right: 5px;
+}
+
+.galery{
+  background-color: #f9d93b;
+  text-align: center;
+}
+
+/* CSS untuk tabel */
+.table-section {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Memberi warna latar belakang pada baris genap */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Memberi warna latar belakang pada baris ganjil (tidak diaktifkan) */
+/*tr:nth-child(odd) {
+  background-color: #ffffff;
+}*/
+
+/* Menghilangkan garis batas pada sel terakhir di setiap baris */
+tr:last-child td {
+  border-bottom: 0;
+}
+
+/* Memberi warna latar belakang pada baris saat dihover */
+tr:hover {
+  background-color: #ddd;
+}
+
+.logo-contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
